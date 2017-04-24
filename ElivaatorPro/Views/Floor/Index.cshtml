@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+</div>
+<div class="alert alert-danger" style="display:none">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="errorMessage"></span>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h4>Please enter number of floors</h4>
+        <input type="number" name="totalFloors" class="totalFloors" value="" />
+        <input type="submit" name="SubmitFloor" class="SubmitFloor" value="Submit" />
+    </div>
+    <div class="col-md-3">
+        <h4>Which floor you want to go?</h4>
+        <input type="number" name="selectedFloor" class="selectedFloor" value="" />
+        <input type="button" class="Go" value="Press" disabled />
+    </div>
+    <div class="col-md-3">
+        <h4>Waiting Floor</h4>
+        <div class="alert-info liftInfo" style="display:none">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="liftInfoMessage"></span>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <h4>Floors</h4>
+        <h4><span class="label label-success totalFloorLabel"></span></h4>
+    </div>
+    <div class="col-md-2">
+        <h4>Other Action</h4>
+        <input type="button" class="Evacuate btn btn-danger" value="Evacuate" />
+    </div>
+</div>
+
+
