@@ -20,7 +20,7 @@
 
         public IActionResult SubmitFloor(int totalFloors)
         {
-            if (!ModelState.IsValid && totalFloors < 0)
+            if (!ModelState.IsValid || totalFloors < 0)
             {
                 return this.BadRequest();
             }
